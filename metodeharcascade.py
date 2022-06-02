@@ -21,3 +21,17 @@ def center_handle(x,y,w,h):
     cx= x+x1
     cy= y+y1
     return cx,cy
+
+
+while True:
+    ret, framecars = cap.read()
+    car_img = framecars.copy()
+    time = float(1/delay)
+    sleep(time)
+
+    
+    if(type(framecars)== type(None)):
+        break
+
+  
+    # z = z+1
