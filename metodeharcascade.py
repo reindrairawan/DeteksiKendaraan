@@ -14,3 +14,10 @@ offset = 6 #allowable arror between pixel
 car=0
 z=0
 counter_line_positon = 550
+
+def center_handle(x,y,w,h):
+    x1=int(w/2)
+    y1=int(h/2)
+    cx= x+x1
+    cy= y+y1
+    return cx,cy
