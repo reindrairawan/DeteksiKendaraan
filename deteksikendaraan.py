@@ -64,7 +64,7 @@ while True:
 
         center = center_handle(x,y,w,h)
         detect.append(center)
-        cv2.circle(frame1, center,4, (0,0,255),-1)
+        cv2.circle(frame1, center,4, (0,0,255),-1) #titik tengah dari suatu frame
 
         for (x,y) in detect:
             if y<(counter_line_positon+offset) and y>(counter_line_positon-offset):
