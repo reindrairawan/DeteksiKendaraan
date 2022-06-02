@@ -72,6 +72,8 @@ while True:
         cv2.line(frame1,(25,counter_line_positon),(1200,counter_line_positon),(0,127,255),3)
         detect.remove((x,y))
         print("Hitung Kendaraan:"+str(counter))
+        # cv2.imwrite(crop_dir+ str(i) +'--' +str(z)+'.jpg',frame1) #untuk mengambil gambar kondisi jalan
+        cv2.imwrite(crop_dir+ str(i) +'--' +str(z)+'.jpg',car_img) #untuk mengambil gambar (mendeteksi mobil) 
 
 
     cv2.putText(frame1,"Hitung:"+str(counter),(450,70),cv2.FONT_HERSHEY_COMPLEX,2,(0,0,255),5)
