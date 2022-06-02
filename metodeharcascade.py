@@ -35,3 +35,4 @@ while True:
 
   
     # z = z+1
+    gray = cv2.cvtColor(framecars, cv2.COLOR_BGR2GRAY)
