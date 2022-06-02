@@ -1,3 +1,16 @@
 
 pathcascade = 'cars.xml'
 pathvideo = 'video.mp4'
+
+cap  = cv2.VideoCapture(pathvideo)
+cascade = cv2.CascadeClassifier(pathcascade)
+crop_dir = 'crop/'
+iterasi = 10
+i=0
+
+delay = 200
+detect = []
+offset = 6 #allowable arror between pixel
+car=0
+z=0
+counter_line_positon = 550
