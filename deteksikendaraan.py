@@ -55,6 +55,8 @@ while True:
         if not validation_counter:
             continue
 
+        car_img = frame1[y:y+h,x:x+w]
+        z=z+1
         cv2.rectangle(frame1,(x,y),(x+w,y+h),(0,255,0),2)
         cv2.putText(frame1,"Hitung:"+str(counter),(x,y-20),cv2.FONT_HERSHEY_COMPLEX, 1, (255,244,0),2)
 
