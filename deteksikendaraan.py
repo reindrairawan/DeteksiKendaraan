@@ -12,6 +12,8 @@ min_height_react =80   #min height reactangle
 
 counter_line_positon = 550
 
+crop_dir = 'CropImageFromContour/'
+z=0
 #inisialisasi substructor
 algo = cv2.bgsegm.createBackgroundSubtractorMOG()
 
