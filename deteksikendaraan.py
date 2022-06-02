@@ -8,7 +8,7 @@ cap = cv2.VideoCapture('Video.mp4')
 
 min_width_react =80   #min with reactangle
 
-min_height_react =80   #min with reactangle
+min_height_react =80   #min height reactangle
 
 counter_line_positon = 550
 
