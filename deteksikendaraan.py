@@ -32,6 +32,7 @@ counter=0
 
 while True:
     ret,frame1 = cap.read()
+    car_img = frame1.copy()
     gray = cv2.cvtColor(frame1,cv2.COLOR_BGR2GRAY)
     blur = cv2.GaussianBlur(gray,(3,3),5)
     
