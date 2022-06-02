@@ -69,6 +69,9 @@ while True:
         for (x,y) in detect:
             if y<(counter_line_positon+offset) and y>(counter_line_positon-offset):
                 counter+=1
+
+               
+
         cv2.line(frame1,(25,counter_line_positon),(1200,counter_line_positon),(0,127,255),3)
         detect.remove((x,y))
         print("Hitung Kendaraan:"+str(counter))
@@ -81,8 +84,11 @@ while True:
         
     cv2.imshow('Video Original', frame1)
 
-    if cv2.waitKey(1) == 13:
+    # if cv2.waitKey(1) == 13:
+    #     break
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
 
 cv2.destroyAllWindows()
 cap.release()
